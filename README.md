@@ -40,12 +40,13 @@ Download the respective folder called Quanser_simulation. Then, open the Quanser
 1. Download the folder. 
 2. Run the Matlab file  "**Main_Obst_Avoi_sta_lin.m**"
 3. The simulation should start showing the following result  
-![image](https://github.com/fercho-0109/RHC-Tracking-Trajectory-with-Obstacle-Avoidance/assets/40362695/9da97de6-8f37-4604-bd6f-a36ef1451159)
+![image](https://github.com/fercho-0109/Receding-Horizon-Control-for-Obstacle-Avoidance-using-differential-drive-robots/assets/40362695/248b56f8-e117-44e9-b81c-d3f7c2e67777)
+
 ### Quanser simulation
 1. Download the folder
 2. Open the Quanser interactive labs and select Qbot 2e.
 3. Setup the position of the robot in the virtual environment Qlab, go to Options - Change reset location - choose x=-0.25, y=-1.75, rotation=180 deg
-4. Run the Matlab file "**Main_tracking_using_dyn_lin_Quanser.m**"
-5. Open and Run the Simulink file "**Tracking_with_dynamic_lin.slx**"
-6. The Qbot 2e should start to move following the reference trajectory "red line"  
+4. Run the Matlab file "**Main_Obst_Avoi_sta_lin.m**"
+5. Open and Run the Simulink file "**Obs_Avoi_with_sta_lin.slx**"
+6. The Qbot 2e should start to move following the reference way points.  
 ![image](https://github.com/PreCyseGroup/RHC-Tracking-Trajectory-with-Obstacle-Avoidance/assets/40362695/855b62e5-6ebd-4bf2-a85c-3464a9948a70)
