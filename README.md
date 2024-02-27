@@ -6,10 +6,15 @@ Research "Concordia University".
 # Sumary.
 This repository contains an implementation of a Receding Horizon Control to solve the obstacle avoidance problem in mobile robots. The robot used is a differential drive robot which is linearized by using I/O Feedback linearization. The key aspect of the control is the management of input constraints, which change across the linearization procedure. The simulation is performed using Matlab, and the validation of the controller is achieved by implementing the control in a Digital Twin of the Qbot2 robot provided by Quanser Company. this control implementation is based on [1] and is part of a master thesis of the owner of this repository.
 # Problem Formulation.
-![image](https://github.com/fercho-0109/Receding-horizon-control-for-tracking-trajectory-using-differential-drive-robots/assets/40362695/794e708b-1791-45bc-a1ba-c37edbe86396)  
+![image](https://github.com/fercho-0109/Receding-Horizon-Control-for-Obstacle-Avoidance-using-differential-drive-robots/assets/40362695/9f7fbefa-5117-4dd1-876d-5752bcc7adad)
 
-Considering the differential drive model, the input constraints set, and a bounded trajectory 𝑟(𝑡),  
-Design a feedback control lay [𝜔_𝑅,𝜔_𝐿 ]=𝑔(𝑝(𝑡),𝜃(𝑡),𝑟(𝑡)) such that the tracking error is bounded and [𝜔_𝑅,𝜔_𝐿 ]∈ 𝑈_𝑑,∀𝑡≥0
+Let 𝒑(𝒌)=〖[𝑥(𝑡),𝑦(𝑡)]〗^𝑇be the planar position of the differential-drive robot at time k, 𝒑_𝒇=〖[𝑥_𝑓,𝑦_𝑓]〗^𝑇  the desired target location, and 𝓞_𝒇 (𝒌)  the obstacle-free region. Under the assumption that an obstacle-free path exists from 𝑝(0) to 𝑝_𝑓 , design a feedback control strategy  
+[𝜔_𝑅,𝜔_𝐿 ]=𝑔(𝑝(𝑘),𝑝_𝑓,𝒪_𝑓 (𝑘))  
+such that the robot is asymptotically driven to 𝑝_𝑓 , avoiding collisions and fulfilling the velocity constraint.
+
+
+
+
   
 # Prerequisites
 - The code was created and tested on the Matlab/Simulink 2023a environment
